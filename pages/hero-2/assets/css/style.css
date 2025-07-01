@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-accent-1: #c6a288;
+  --color-accent-2: #c99678;
+  --color-secondary-1: #4b403e;
+  --color-secondary-2: #120d0c;
+  --color-primary-1: #f3f3f3;
+  --color-primary-2: #d6d6d6;
+
+  --header-font: "Poppins", sans-serif;
+  --content-font: "Urbanist", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--content-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
+
+body {
+    background-image: url("../assets/coding\ background.jpg");
+  color: var(--color-primary-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.wallpaper {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  align-items: center;
+  gap: 0.2rem;
+  height: 100vh;
+
+  & .course {
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    font-weight: 300;
+  }
+
+  & .title {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    padding-left: 7rem;
+  }
+
+  & .subtitle {
+    font-weight: 500;
+    letter-spacing: 1rem;
+  }
+}
+
+.bottom {
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+
+  & .year {
+    font-weight: 300;
+  }
+
+
+    &:hover {
+      transform: rotate(720deg);
+      transition: all 1s ease;
+    }
+  }
+   
+
+
+#loom-companion-mv3,
+.fiveserver-info-wrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top {
+    & .title {
+      font-size: 4.5rem;
+      padding-left: 0;
+    }
+  }
+}
