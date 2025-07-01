@@ -66,13 +66,13 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Headers and foorters
 
 Guiding Question:
-- What is the project
-- Whats the purpose
+- this project is about making headers and footers
+- to familiarize using HTML & CSS
 - What are key components
-- What technology used and how it is used
+- programming languages: HTML & CSS
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -126,4 +126,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| First act | 5 headers 5 footers| trykolang.com |
+| First act | 5 headers 5 footers| https://abeleops.github.io/WD-Seatwork---1/ |
