@@ -66,10 +66,10 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Headers and foorters
+Hero Sections
 
 Guiding Question:
-- this project is about making headers and footers
+- this project is about making Hero Section
 - to familiarize using HTML & CSS
 - What are key components
 - programming languages: HTML & CSS
