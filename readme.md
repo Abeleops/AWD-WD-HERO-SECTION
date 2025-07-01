@@ -126,4 +126,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| First act | 5 headers 5 footers| https://abeleops.github.io/WD-Seatwork---1/ |
+| Second act | 4 HERO SECTION|  |
