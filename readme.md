@@ -10,7 +10,7 @@
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
 
-  <h3 align="center">WD-Seatwork---1</h3>
+  <h3 align="center">WD-Seatwork---2</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
@@ -99,7 +99,7 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-SeatWork2
 └─ assets
 |   └─ css
 |   |   └─ style.css
@@ -108,7 +108,7 @@ WD-ProjectName
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ Hero-1
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
@@ -126,4 +126,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Second act | 4 HERO SECTION|  |
+| SeatWork 2 | 4 HERO SECTION|  |
