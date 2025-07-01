@@ -88,8 +88,6 @@ body {
     font-weight: 300;
   }
 
-  & .logo {
-    height: 150px;
 
     &:hover {
       transform: rotate(720deg);
@@ -97,7 +95,7 @@ body {
     }
   }
    
-}
+
 
 #loom-companion-mv3,
 .fiveserver-info-wrapper {
