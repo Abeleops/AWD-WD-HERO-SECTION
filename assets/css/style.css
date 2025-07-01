@@ -89,7 +89,7 @@ body {
   }
 
   & .logo {
-    height: 150px;
+    height: 20rem;
 
     &:hover {
       transform: rotate(720deg);
