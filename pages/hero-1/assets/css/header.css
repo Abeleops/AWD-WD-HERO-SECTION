@@ -8,6 +8,7 @@
     width: calc(100dvw - 1.4rem);
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: .7rem 1rem;
     gap: 3rem;
     color: rgb(0, 0, 0);
