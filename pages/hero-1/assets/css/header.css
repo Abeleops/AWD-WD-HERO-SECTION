@@ -12,8 +12,18 @@
     gap: 3rem;
     color: rgb(0, 0, 0);
     height: fit-content;
-
     
+    & .left{
+         display: flex;
+        align-items: flex-start;
+        gap: 0.7rem;
+    }
+    & .center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;;
+    }
     
     & .btn {
         background: rgba(0, 255, 34, 0.596);
@@ -56,16 +66,6 @@
             }
         }
     }
-
-    & .logo {
-    width: 5rem;
-    height: 25px;
-    transition: all 1s ease;
-        &:hover {
-      transform: rotate(720deg);
-      transition: all 1s ease;
-    }
-  }
 }
 
 @media only screen and (max-width: 1024px) {
