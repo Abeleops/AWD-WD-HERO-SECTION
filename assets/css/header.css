@@ -9,13 +9,14 @@
     display: flex;
     justify-content: flex-end;
     padding: .7rem 1rem;
-    gap: 1rem;
-    color: white;
+    gap: 3rem;
+    color: rgb(0, 0, 0);
     height: fit-content;
 
     
+    
     & .btn {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(0, 255, 34, 0.596);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -30,7 +31,7 @@
         transition: all .2s ease;
         
         &.active {
-            background: rgba(255, 255, 255, 0.479);
+            background: rgba(6, 255, 172, 0.479);
         }
         
         &::before {
@@ -48,9 +49,10 @@
         }
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.3);
+            background-color: black;
             &::before {
-                transform: skew(20deg) translateY(-5px) translateX(-20px);
+                transform: skew(50deg) translateY(-5px) translateX(-20px) ;
             }
         }
     }
