@@ -16,11 +16,11 @@
     & .left{
          display: flex;
         align-items: flex-start;
-        gap: 0.7rem;
+        gap: 1rem;
 
         & .logo {
-            height: 50px;
-            width: 50px;
+            height: 100px;
+            width: 100px;
             border-radius: 50%;
             overflow: hidden;
             transition: all .2s ease;
