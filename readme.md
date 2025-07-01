@@ -126,4 +126,4 @@ WD-SeatWork2
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| SeatWork 2 | 4 HERO SECTION|  |
+| SeatWork 2 | 4 HERO SECTION| https://abeleops.github.io/AWD-WD-HERO-SECTION/ |
