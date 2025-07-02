@@ -59,6 +59,16 @@ body {
   gap: 0.4rem;
   height: 100vh;
 
+  
+  & .logo {
+    height: 20rem;
+
+    &:hover {
+      transform: rotate(720deg);
+      transition: all 1s ease;
+    }
+  }
+  
   & .course {
     font-size: 2rem;
     letter-spacing: 0.8rem;
@@ -88,14 +98,7 @@ body {
     font-weight: 300;
   }
 
-  & .logo {
-    height: 20rem;
-
-    &:hover {
-      transform: rotate(720deg);
-      transition: all 1s ease;
-    }
-  }
+  
    
 }
 
