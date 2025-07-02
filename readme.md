@@ -6,8 +6,9 @@
 <div align="center">
   <a href="https://github.com/Abeleops/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/AbeleOps.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/AbeleOps.png" alt="abele" width="130" height="100">
   </a>
+  [![wakatime](https://wakatime.com/@8a4344d8-d020-4065-83a2-c103e04a6752/projects/cimzrmabqc?start=2025-06-26&end=2025-07-02)]
 <!-- TODO: Change Title to the name of the title of your Project -->
 
   <h3 align="center">WD-Seatwork---2</h3>
