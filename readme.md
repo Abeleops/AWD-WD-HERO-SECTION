@@ -31,7 +31,7 @@
 ![](https://visit-counter.vercel.app/counter.png?page=AbeleOps/WD-Seatwork---1)
 
 
-[![WakaTime Stats](https://wakatime.com/badge/user/8a4344d8-d020-4065-83a2-c103e04a6752/project/cimzrmabqc.svg)](https://wakatime.com/@8a4344d8-d020-4065-83a2-c103e04a6752/projects/cimzrmabqc?start=2025-06-26&end=2025-07-02)
+[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
 
 [My WakaTime Project](https://wakatime.com/@8a4344d8-d020-4065-83a2-c103e04a6752/projects/cimzrmabqc?start=2025-06-26&end=2025-07-02)
 ---
