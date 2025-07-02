@@ -122,8 +122,9 @@ body {
 /* ===== RIGHT SIDE - CONTENT == */
 /* ============================= */
 .content {
+
   flex: 1;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
