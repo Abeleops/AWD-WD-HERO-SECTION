@@ -51,49 +51,35 @@ body {
   filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5rem;
-  align-items: center;
-  gap: 0.2rem;
-  height: 100vh;
 
-  & .course {
-    font-size: 2rem;
-    letter-spacing: 0.8rem;
-    font-weight: 300;
-  }
-
-  & .title {
-    font-size: 5rem;
-    letter-spacing: 1rem;
-    padding-left: 7rem;
-  }
-
-  & .subtitle {
-    font-weight: 500;
-    letter-spacing: 1rem;
-  }
-}
-
-.bottom {
-  padding-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-
-  & .year {
-    font-weight: 300;
-  }
-
-
-    &:hover {
-      transform: rotate(720deg);
-      transition: all 1s ease;
+    /* Left Section */
+    .left {
+      width: 30%;
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
     }
-  }
+
+    /* Right Container */
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Right Top */
+    .right-top {
+      flex: 1;
+      background-color: #f1c40f;
+      padding: 20px;
+    }
+
+    /* Right Bottom */
+    .right-bottom {
+      flex: 1;
+      background-color: #2ecc71;
+      padding: 20px;
+    }
    
 
 
