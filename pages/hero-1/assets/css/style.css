@@ -83,16 +83,16 @@ body {
 }
 
 .wallpaper .character {
-  max-width: 85%;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   z-index: 1;
 }
 
 .wallpaper .luffy-description {
   text-align: center;
-  margin-top: 1rem;
-  max-width: 80%;
+  margin-top: 0rem;
+  max-width: 100%;
   z-index: 2;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .wallpaper .luffy-description p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -153,10 +153,10 @@ body {
 
 .content .card1,
 .content .card2 {
-  width: 20dvw;
+  width:35dvw;
   text-align: justify;
   background-color: rgba(0, 0, 0, 0.308);
-  padding: 0.7rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 5px;
   align-self: flex-start;
   position: relative;
