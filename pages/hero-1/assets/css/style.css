@@ -165,7 +165,8 @@ body {
   transform: translateY(-8rem);
 }
 .content .card2 {
-  transform: translateY(-12rem);
+  transform: translateY(-16rem);
+  
 }
 
 .content .card2 .title {
