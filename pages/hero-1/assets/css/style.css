@@ -164,6 +164,9 @@ body {
 .content .card1 {
   transform: translateY(-8rem);
 }
+.content .card2 {
+  transform: translateY(-12rem);
+}
 
 .content .card2 .title {
   border-bottom: 4px solid white;
