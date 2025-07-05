@@ -64,8 +64,8 @@ body {
     height: 20rem;
 
     &:hover {
-      transform: scale(15); 
-    transition: transform 0.3s ease;
+      transform: scale(4); 
+    transition: transform 0.1s ease;
     }
   }
 
