@@ -64,8 +64,8 @@ body {
     height: 20rem;
 
     &:hover {
-      transform: rotate(720deg);
-      transition: all 1s ease;
+      transform: scale(15); 
+    transition: transform 0.3s ease;
     }
   }
 
