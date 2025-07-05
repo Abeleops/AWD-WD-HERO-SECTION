@@ -159,6 +159,10 @@ body {
   transform: translateY(-8rem);
 }
 
+.content .card2 {
+  transform: translateY(-13rem);
+}
+
 .content .card2 .title {
   border-bottom: 4px solid white;
   width: fit-content;
