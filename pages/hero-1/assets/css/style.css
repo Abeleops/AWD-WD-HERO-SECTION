@@ -91,15 +91,7 @@ body {
   z-index: 2;
 }
 
-.wallpaper .luffy-description h2 {
-  font-size: 2rem;
-  font-weight: 700;
-}
 
-.wallpaper .luffy-description p {
-  font-size: 1rem;
-  line-height: 1.4;
-}
 
 .wallpaper .bottom-text {
   position: absolute;
