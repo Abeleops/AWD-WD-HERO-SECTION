@@ -239,12 +239,18 @@ body {
 
   div {
     background-image: url(../img/onepiece_logo-removebg-preview.png);
-    width: 10rem;
-    outline: 1px solid;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  outline: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
 
     &:hover {
       background-color: rgb(255, 115, 115);
