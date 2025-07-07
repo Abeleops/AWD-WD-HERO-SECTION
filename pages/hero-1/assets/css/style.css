@@ -254,7 +254,8 @@ body {
       opacity: 0;
     }
 
-    .btn:hover #second{
+    .btn1:hover #second{
+      
      opacity: 1;
     }
   }
