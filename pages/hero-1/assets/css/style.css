@@ -201,34 +201,6 @@ body {
   z-index: -1;
 }
 
-/* Hide all gear images by default */
-.gear-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: none;
-  max-width: 20rem;
-  max-height: 50rem;
-  z-index: 2;
-}
-
-/* Show the correct gear image when hovering the button */
-#btn1:hover ~ .wallpaper #gear2,
-#btn3:hover ~ .wallpaper #gear3,
-#btn4:hover ~ .wallpaper #gear4,
-#btn5:hover ~ .wallpaper #gear5 {
-  display: block;
-}
-
-/* Hide Luffy when any gear image is shown */
-#btn1:hover ~ .wallpaper .character,
-#btn3:hover ~ .wallpaper .character,
-#btn4:hover ~ .wallpaper .character,
-#btn5:hover ~ .wallpaper .character {
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
   .hero .wallpaper h1 {
@@ -253,14 +225,6 @@ body {
 
   .content .card1 {
     transform: translateY(-3rem);
-  }
-
-  .card3 div {
-    width: 7rem;
-    padding: 0.3rem 0.5rem;
-  }
-  .card3 div img {
-    width: 20rem;
   }
 }
 
@@ -320,11 +284,13 @@ body {
   display: block;
 }
 
-/* Hide Luffy when any Gear button is hovered */
-.card3 div:hover ~ .wallpaper .character,
-.card3 div:hover ~ .character,
-.card3:hover ~ .wallpaper .character {
-  opacity: 0;
-  transition: opacity 0.3s;
+@media (max-width: 1024px) {
+  .card3 div {
+    width: 7rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .card3 div img {
+    width: 20rem;
+  }
 }
 
