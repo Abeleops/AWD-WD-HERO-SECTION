@@ -123,10 +123,18 @@ body {
 .middle-lower{
   flex-direction: column;
   align-items: center;
+  .btns{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
 & .btn1 {
         background: rgba(229, 255, 0, 0.596);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
         backdrop-filter: blur(10px);
+        height: fit-content;
         font-size: 1.2rem;
         border: 1px solid rgba(245, 245, 245, 0.212);
         padding: .2rem .5rem;
