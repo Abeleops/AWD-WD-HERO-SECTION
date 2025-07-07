@@ -79,7 +79,7 @@ body {
 }
 
 .wallpaper .character {
-  max-width: 20rem;
+  max-width: 250rem;
   max-height: 50rem;
   z-index: 1;
 }
