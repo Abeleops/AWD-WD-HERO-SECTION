@@ -53,52 +53,6 @@ body {
   filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5rem;
-  align-items: center;
-  gap: 0.2rem;
-  height: 100vh;
-
-  & .course {
-    font-size: 2rem;
-    letter-spacing: 0.8rem;
-    font-weight: 300;
-  }
-
-  & .title {
-    font-size: 5rem;
-    letter-spacing: 1rem;
-    padding-left: 7rem;
-  }
-
-  & .subtitle {
-    font-weight: 500;
-    letter-spacing: 1rem;
-  }
-}
-
-.bottom {
-  padding-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-
-  & .year {
-    font-weight: 300;
-  }
-
-
-    &:hover {
-      transform: rotate(720deg);
-      transition: all 1s ease;
-    }
-  }
-   
-
-
 #loom-companion-mv3,
 .fiveserver-info-wrapper {
   display: none;
@@ -111,4 +65,112 @@ body {
       padding-left: 0;
     }
   }
+}
+
+.hero-sections {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.left, .right {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.left {
+  align-items: flex-end;
+  padding-right: 2vw;
+}
+
+.right {
+  align-items: flex-start;
+  padding-left: 2vw;
+}
+
+
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(75, 64, 62, 0.1);
+}
+
+.zoro {
+  width: auto;
+  height: 80vh;
+  max-height: 90vh;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.right .swords {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.5rem;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+.sword {
+  width: 95%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+}
+
+.sword-block {
+  width: 95%;
+  max-width: 420px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sword-desc {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+}
+
+/* Red description */
+.sword1 + .sword-desc {
+  background: #b71c1c;
+  color: #fff;
+}
+
+/* White description */
+.sword2 + .sword-desc {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+/* Violet description */
+.sword3 + .sword-desc {
+  background: #7c3aed;
+  color: #fff;
+}
+
+/* Optional: Add vertical divider lines for visual separation */
+.section:not(:last-child) {
+  border-right: 2px solid rgba(255,255,255,0.2);
 }
