@@ -239,10 +239,10 @@ body {
   position: relative;
 
   div {
+    background-image: url(../img/onepiece_logo-removebg-preview.png);
     width: 10rem;
     outline: 1px solid;
     padding: 0.4rem 0.8rem;
-    background-color: rgb(255, 68, 68);
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -272,5 +272,22 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+
+.card3 div img {
+  position: absolute;
+  top: -1200%;
+  left: -500%;
+  display: none;
+  width: 50rem;
+  height: auto;
+  z-index: 10;
+}
+
+#btn1:hover #second,
+#btn3:hover #third,
+#btn4:hover #fourth,
+#btn5:hover #fifth {
+  display: block;
 }
 
