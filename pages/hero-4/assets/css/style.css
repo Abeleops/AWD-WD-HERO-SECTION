@@ -32,13 +32,15 @@ h6 {
 }
 
 body {
-    background-image: url("../img/coding\ background.jpg");
+  background-color: var(--color-secondary-2);
   color: var(--color-primary-1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .wallpaper {
