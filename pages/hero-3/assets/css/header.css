@@ -42,7 +42,7 @@
     }
     
     & .btn {
-        background: rgba(0, 255, 34, 0.596);
+        background: rgba(238, 255, 0, 0.596);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
