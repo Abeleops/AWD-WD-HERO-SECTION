@@ -54,50 +54,6 @@ body {
   filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5rem;
-  align-items: center;
-  gap: 0.2rem;
-  height: 100vh;
-
-  & .course {
-    font-size: 2rem;
-    letter-spacing: 0.8rem;
-    font-weight: 300;
-  }
-
-  & .title {
-    font-size: 5rem;
-    letter-spacing: 1rem;
-    padding-left: 7rem;
-  }
-
-  & .subtitle {
-    font-weight: 500;
-    letter-spacing: 1rem;
-  }
-}
-
-.bottom {
-  padding-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-
-  & .year {
-    font-weight: 300;
-  }
-
-
-    &:hover {
-      transform: rotate(720deg);
-      transition: all 1s ease;
-    }
-  }
-   
 
 
 #loom-companion-mv3,
@@ -112,4 +68,65 @@ body {
       padding-left: 0;
     }
   }
+}
+
+.hero-sections {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section {
+  flex: 1; /* Ensures all sections are equal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.left,
+.middle,
+.right {
+  flex: 1;                /* Equal width for all */
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Left section */
+.left {
+  align-items: flex-end;
+  padding-right: 2vw;
+  padding-left: 0;
+}
+
+/* Middle section */
+.middle {
+  background: rgba(75, 64, 62, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+.sanji {
+  width: auto;
+  height: 80vh;
+  max-height: 50vh;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.sanji-title {
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  font-family: var(--header-font);
+  font-weight: 700;
+  color: #0bbe56;
+ 
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 8px #120d0c;
+}
+/* Right section */
+.right {
+  align-items: flex-start;
+  padding-left: 2vw;
 }
