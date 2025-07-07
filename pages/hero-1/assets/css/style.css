@@ -274,15 +274,53 @@ body {
 
 .card3 div img {
   position: absolute;
-  top: -1200%;
-  left: -500%;
+  
   
   display: none;
-  width: 50rem;
+
+  height: auto;
+  
+}
+#second {
+  position: absolute;
+  top: -1850%;
+  left: -800%;
+  
+  display: none;
+  width: 80rem;
   height: auto;
   z-index: 10;
 }
-
+#third {
+  position: absolute;
+  top: -1250%;
+  left: -680%;
+  
+  display: none;
+  width:55rem;
+  height: auto;
+  z-index: 10;
+}
+#fourth {
+  position: absolute;
+  top: -1800%;
+  left: -910%;
+  
+  display: none;
+  width: 80rem;
+  height: auto;
+  z-index: 10;
+}
+#fifth {
+  position: absolute;
+  top: -1800%;
+  left: -1010%;
+  
+  display: none;
+  width: 80rem;
+  height: auto;
+  z-index: 20;
+}
 #btn1:hover #second,
 #btn3:hover #third,
 #btn4:hover #fourth,
