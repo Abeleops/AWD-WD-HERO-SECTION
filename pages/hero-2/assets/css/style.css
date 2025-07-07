@@ -90,6 +90,10 @@ body {
 .left {
   align-items: flex-end;
   padding-right: 2vw;
+  /* Reduce width and remove extra space */
+  flex: 0.5;           /* Make left section narrower */
+  min-width: 120px;    /* Optional: set a minimum width */
+  padding-left: 0;     /* Remove any left padding if present */
 }
 
 .right {
