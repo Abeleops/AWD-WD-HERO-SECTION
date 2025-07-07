@@ -291,3 +291,13 @@ body {
   display: block;
 }
 
+@media (max-width: 1024px) {
+  .card3 div {
+    width: 7rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .card3 div img {
+    width: 20rem;
+  }
+}
+
