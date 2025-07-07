@@ -113,7 +113,7 @@ body {
 .zoro {
   width: auto;
   height: 80vh;
-  max-height: 90vh;
+  max-height: 70vh;
   display: block;
   margin: 0 auto;
   object-fit: contain;
@@ -174,7 +174,51 @@ body {
   color: #fff;
 }
 
-/* Optional: Add vertical divider lines for visual separation */
+/* Remove vertical divider lines for visual separation */
 .section:not(:last-child) {
-  border-right: 2px solid rgba(255,255,255,0.2);
+  border-right: none;
+}
+.sword-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+  
+}
+.sword-link {
+  color: #fff;
+  background: #4b403e;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.sword-link:hover, .sword-link:focus {
+  background: #c6a288;
+  color: #222;
+}
+.sword-desc {
+  display: none;
+}
+
+.sword-desc.active {
+  display: block;
+}
+
+.zoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoro-title {
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  font-family: var(--header-font);
+  font-weight: 700;
+  color: #0bbe56;
+ 
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 8px #120d0c;
 }
