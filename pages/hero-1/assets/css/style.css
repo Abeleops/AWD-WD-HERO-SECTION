@@ -244,6 +244,7 @@ body {
     background-color: rgb(255, 68, 68);
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
     &:hover{
       background-color: rgb(255, 115, 115);
     }
@@ -251,12 +252,14 @@ body {
       position: absolute;
       top: -180%;
       left: -100%;
-      opacity: 0;
+      display: none;
+      width: 100%;
+      height: auto;
     }
 
     .btn1:hover #second{
       
-     opacity: 1;
+     display: block;
     }
   }
   a{
