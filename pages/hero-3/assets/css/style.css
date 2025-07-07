@@ -16,6 +16,7 @@
 *,
 *::before,
 *::after {
+  outline: 1px solid;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -103,25 +104,43 @@ body {
 
 /* Middle section */
 .middle {
-  background: rgba(75, 64, 62, 0.1);
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background: rgba(75, 64, 62, 0.1);
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
 }
+
+.middle-upper,
+.middle-lower {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.zoro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .sanji {
+  max-height: 100%;
   width: auto;
-  height: 80vh;
-  max-height: 50vh;
-  display: block;
-  margin: 0 auto;
   object-fit: contain;
 }
+
 .sanji-title {
-  margin-top: 1.5rem;
   font-size: 2.2rem;
   font-family: var(--header-font);
   font-weight: 700;
   color: #0bbe56;
- 
   letter-spacing: 2px;
   text-shadow: 1px 2px 8px #120d0c;
 }
