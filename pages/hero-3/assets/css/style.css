@@ -115,8 +115,9 @@ body {
 
 .sanji {
   display: block;
-  top: 0;
-  left: 0;
+  top: 35%;
+  left: 10%;
+  z-index: 2rem;
 }
 
 #first {
