@@ -130,7 +130,7 @@ body {
     align-items: center;
     margin-top: 1rem;
   }
-& .btn1 {
+& .btn {
         background: rgba(229, 255, 0, 0.596);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
         backdrop-filter: blur(10px);
@@ -152,9 +152,19 @@ body {
             }
         }
 }
-  
+#first {
+  position: absolute;
+  display: none;
+  height: auto;
+  z-index: 10;
 }
-.zoro-container {
+.btns div img {
+  position: absolute;
+  display: none;
+  height: auto;
+}
+}
+.sanji-container {
   display: flex;
   justify-content: center;
   align-items: center;
