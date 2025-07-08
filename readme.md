@@ -1,34 +1,24 @@
-<a name="readme-top">
+<a name="readme-top"></a>
 
 <br/>
 
 <br />
 <div align="center">
   <a href="https://github.com/Abeleops/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/AbeleOps.png" alt="abele" width="130" height="100">
+    <img src="./assets/img/AbeleOps.png" alt="AbeleOps Logo" width="130" height="100">
   </a>
 
-<!-- TODO: Change Title to the name of the title of your Project -->
-
-  <h3 align="center">WD-Seatwork---2</h3>
+  <h3 align="center">WD-HERO-SECTION</h3>
 </div>
-<!-- TODO: Make a short description -->
-<div align="center">
-  This project will demonstrate my skills in Web Dev 
 
-  <h3 align="center">AbeleOps</h3>
-</div>
-<!-- TODO: Make a short description -->
 <div align="center">
+  A collection of hero sections demonstrating various web development techniques and One Piece themed designs.
   
-
+  <h3 align="center">AbeleOps</h3>
 </div>
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=AbeleOps/WD-Seatwork---1)
+![](https://visit-counter.vercel.app/counter.png?page=AbeleOps/AWD-WD-HERO-SECTION)
 
 
 [![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
@@ -55,7 +45,7 @@
       </ol>
     </li>
     <li>
-      <a href="#rule,-practices-and-principles">Rules, Practices and Principles</a>
+      <a href="#rules-practices-and-principles">Rules, Practices and Principles</a>
     </li>
     <li>
       <a href="#resources">Resources</a>
@@ -67,27 +57,19 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Hero Sections
-
-Guiding Question:
-- this project is about making Hero Section
-- to familiarize using HTML & CSS
-- What are key components
-- programming languages: HTML & CSS
+This project showcases a collection of hero sections with One Piece themed designs, demonstrating various web development techniques and CSS animations. Each hero section represents different characters from the One Piece universe with unique styling and interactive elements.
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- **Multiple Hero Sections**: 5 different character-themed hero sections (Luffy, Zoro, Sanji, Nami, Usopp)
+- **Interactive Elements**: Hover effects and character transformations
+- **Responsive Design**: Mobile-friendly layouts
+- **Character Animations**: CSS-based animations for character state changes
+- **Theme Consistency**: Consistent branding and navigation across all sections
 
 ### Technology
-<!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 
 ## Rules, Practices and Principles
@@ -102,31 +84,106 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-SeatWork2
+AWD-WD-HERO-SECTION
 └─ assets
 |   └─ css
+|   |   └─ header.css
+|   |   └─ scrollbar.css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ AbeleOps.png
+|   |   └─ coding background.jpg
+|   |   └─ one piece background.jpeg
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ Hero-1
+|  └─ hero-1
+|  |  └─ assets
+|  |  |  └─ css
+|  |  |  |  └─ header.css
+|  |  |  |  └─ scrollbar.css
+|  |  |  |  └─ style.css
+|  |  |  └─ img
+|  |  |  |  └─ AbeleOps.png
+|  |  |  |  └─ coding background.jpg
+|  |  |  |  └─ luffy_background.jpg
+|  |  |  |  └─ luffy_gear2-removebg-preview.png
+|  |  |  |  └─ luffy_gear3-removebg-preview.png
+|  |  |  |  └─ luffy_gear4-removebg-preview.png
+|  |  |  |  └─ luffy_gear5-removebg-preview.png
+|  |  |  |  └─ luffy_normal-removebg-preview.png
+|  |  |  |  └─ onepiece_logo-removebg-preview.png
+|  |  |  └─ js
+|  |  |     └─ scripts.js
+|  |  └─ index.html
+|  └─ hero-2
+|  |  └─ assets
+|  |  |  └─ css
+|  |  |  |  └─ header.css
+|  |  |  |  └─ scrollbar.css
+|  |  |  |  └─ style.css
+|  |  |  └─ img
+|  |  |  |  └─ AbeleOps.png
+|  |  |  |  └─ coding background.jpg
+|  |  |  |  └─ ShimotsukiVillage.webp
+|  |  |  |  └─ sword1.png
+|  |  |  |  └─ sword2.png
+|  |  |  |  └─ sword3.png
+|  |  |  |  └─ zoro-removebg-preview.png
+|  |  |  └─ js
+|  |  |     └─ scripts.js
+|  |  └─ index.html
+|  └─ hero-3
+|  |  └─ assets
+|  |  |  └─ css
+|  |  |  |  └─ header.css
+|  |  |  |  └─ scrollbar.css
+|  |  |  |  └─ style.css
+|  |  |  └─ img
+|  |  |  |  └─ AbeleOps.png
+|  |  |  |  └─ coding background.jpg
+|  |  |  |  └─ Germa_Kingdom_Infobox.webp
+|  |  |  |  └─ sanji_kicking.png
+|  |  |  |  └─ sanji_kicking2.png
+|  |  |  |  └─ sanji.png
+|  |  |  └─ js
+|  |  |     └─ scripts.js
+|  |  └─ index.html
+|  └─ hero-4
+|  |  └─ assets
+|  |  |  └─ css
+|  |  |  |  └─ header.css
+|  |  |  |  └─ scrollbar.css
+|  |  |  |  └─ style.css
+|  |  |  └─ img
+|  |  |  |  └─ AbeleOps.png
+|  |  |  |  └─ clima-tact.png
+|  |  |  |  └─ coding background.jpg
+|  |  |  |  └─ nami_background.jpg
+|  |  |  |  └─ nami-character.png
+|  |  |  └─ js
+|  |  |     └─ scripts.js
+|  |  └─ index.html
+|  └─ hero-5
 |     └─ assets
 |     |  └─ css
+|     |  |  └─ header.css
+|     |  |  └─ scrollbar.css
 |     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|     |  |  └─ AbeleOps.png
+|     |  |  └─ coding background.jpg
+|     |  |  └─ usopp_background.webp
 |     |  └─ js
-|     |     └─ script.js
+|     |     └─ scripts.js
 |     └─ index.html
 └─ index.html
+└─ LICENSE
 └─ readme.md
 ```
 
 ## Resources
 
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
 | SeatWork 2 | 4 HERO SECTION| https://abeleops.github.io/AWD-WD-HERO-SECTION/ |
