@@ -173,6 +173,7 @@ AWD-WD-HERO-SECTION
 |     |  └─ img
 |     |  |  └─ AbeleOps.png
 |     |  |  └─ coding background.jpg
+|     |  |  └─ usopp.png
 |     |  |  └─ usopp_background.webp
 |     |  └─ js
 |     |     └─ scripts.js
