@@ -55,6 +55,8 @@ body {
   align-items: center;
   background: rgba(75, 64, 62, 0.1);
   padding: 0 10px;
+  display: flex;
+  width: 100%;
 }
 
 .middle-upper,
@@ -68,11 +70,12 @@ body {
 
 .middle-lower {
   flex-direction: column;
-  .btns {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -90,27 +93,40 @@ body {
   background-color: rgb(255, 217, 0);
 }
 
+/* NEW: Image container and positioning */
 .sanji-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  position: relative;
+  overflow: visible;
 }
 
 .sanji,
 #first,
 #sanji-left {
   position: absolute;
-  max-height: 100%;
-  width: auto;
+  width: 30rem;
   object-fit: contain;
+  display: none;
 }
 
-#first,
+.sanji {
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+#first {
+  top: 10%;
+  left: 40%;
+}
+
 #sanji-left {
-  display: none;
-  z-index: 2;
+  top: 20%;
+  left: -50%;
 }
 
 .sanji-title {
