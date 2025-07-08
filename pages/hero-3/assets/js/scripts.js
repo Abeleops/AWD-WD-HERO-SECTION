@@ -67,4 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
     backstoryContent.style.visibility = 'hidden';
     backstoryContent.style.transform = 'translateX(20px)';
   });
+  
+  // Mortal Enemy preview functionality
+  const enemyBtn = document.querySelector('.btn3');
+  const enemyPreview = document.querySelector('.mortal-enemy-preview');
+  
+  enemyBtn.addEventListener('mouseenter', function() {
+    enemyPreview.style.opacity = '1';
+    enemyPreview.style.visibility = 'visible';
+    enemyPreview.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
+  
+  enemyBtn.addEventListener('mouseleave', function() {
+    enemyPreview.style.opacity = '0';
+    enemyPreview.style.visibility = 'hidden';
+    enemyPreview.style.transform = 'translate(-50%, -50%) scale(0.9)';
+  });
 });
