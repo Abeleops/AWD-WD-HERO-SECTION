@@ -109,29 +109,6 @@ background-color: var(--color-secondary-2);
   display: none;
 }
 
-/* Custom Logo Container */
-.custom-logo-container {
-  position: relative;
-  display: inline-block;
-}
-.custom-logo-container .logo {
-  display: block;
-  max-width: 700px;
-}
-.custom-logo-container .draggable {
-  position: absolute;
-  cursor: move;
-  pointer-events: all;
-}
-/* Default positions */
-.custom-logo-container .subtitle {
-  top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--color-accent-1);
-}
-
-
 @media only screen and (max-width: 1024px) {
   .top {
     & .title {
