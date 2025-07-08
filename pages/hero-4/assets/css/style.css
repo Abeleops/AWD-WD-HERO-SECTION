@@ -11,7 +11,8 @@
   --body-font: 'Urbanist', sans-serif;
 }
 
-* {
+/* Global reset - avoid conflicts with header.css */
+*:not(.header *) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,19 +31,25 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.8rem;
 }
 
-/* Header Fix */
+/* Header Fix - Ensure proper positioning */
 .header {
-  position: relative;
-  z-index: 100; /* Ensure header stays above other elements */
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000 !important; /* Higher z-index to stay above hero content */
+  background: rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 /* Hero Container */
 .hero-container {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 80px); /* Subtract header height */
+  min-height: 100vh; /* Full viewport height */
   overflow: hidden;
-  margin-top: 0; /* Remove any top margin */
+  margin-top: 0;
+  padding-top: 120px; /* Add padding to account for fixed header */
 }
 
 .wallpaper {
@@ -60,8 +67,8 @@ h1, h2, h3, h4, h5 {
   display: flex;
   width: 90%;
   max-width: 1400px;
-  min-height: 85vh;
-  margin: 20px auto 0; /* Reduced from 90px to 20px */
+  min-height: calc(100vh - 120px); /* Account for header padding */
+  margin: 0 auto; /* Center horizontally */
   gap: 2rem;
   position: relative;
 }
@@ -77,7 +84,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .nami-character {
-  max-height: 80vh;
+  max-height: 95vh;
   object-fit: contain;
   filter: drop-shadow(0 0 25px rgba(255, 140, 0, 0.3));
   transform-origin: bottom center;
@@ -282,12 +289,17 @@ blockquote {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .hero-container {
+    padding-top: 100px; /* Smaller padding for mobile */
+  }
+  
   .hero-content {
     flex-direction: column;
+    min-height: calc(100vh - 100px);
   }
   
   .nami-character {
-    max-height: 60vh;
+    max-height: 75vh;
   }
   
   .stats, .ability-cards {
