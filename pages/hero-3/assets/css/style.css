@@ -109,7 +109,7 @@ body {
   background: rgba(75, 64, 62, 0.1);
   height: 100%;
   width: 100%;
-  padding: 2rem 0;
+  padding: 0rem ;
 }
 
 .middle-upper,
@@ -152,11 +152,21 @@ body {
             }
         }
 }
+/* Initially hide #first */
 #first {
-  position: absolute;
   display: none;
+  position: flex;
   height: auto;
   z-index: 10;
+}
+#first { top: 0%; right: 0%; width: 20rem; }
+/* On hover over .btn2, show #first and hide .sanji */
+.btn2:hover ~ .sanji-container #first {
+  display: block;
+}
+
+.btn2:hover ~ .sanji-container .sanji {
+  display: none;
 }
 .btns div img {
   position: absolute;
