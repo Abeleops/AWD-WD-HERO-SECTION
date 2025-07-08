@@ -104,9 +104,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 5rem 4rem;
   justify-content: center;
-  gap: 10rem;
+  gap: 3rem;
+  position: relative; /* Add this to make it a positioning context */
 }
 
 .content .top {
@@ -176,47 +177,43 @@ body {
 /* Gear Buttons */
 .card3 {
   width: 100%;
-  height: 20%;
+  height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Changed from space-around to center */
   align-items: center;
-  gap: 1rem;
+  gap: 2rem; /* Increased gap between buttons */
+  position: relative; /* Changed from absolute to relative */
+  margin-top: 2rem; /* Add margin instead of absolute positioning */
+  z-index: 10;
 }
 
 .card3 div {
-  background-image: url(../img/onepiece_logo-removebg-preview.png);
-  background-size: cover;
-  background-position: center;
-  width: 10rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.7); /* Darker red background for visibility */
+  border: 2px solid white; /* More visible border */
+  width: 8rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px; /* Slightly more rounded corners */
   cursor: pointer;
   position: relative;
-  outline: 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .card3 div:hover {
-  background-color: rgb(255, 115, 115);
+  transform: scale(1.1); /* Add scaling on hover */
+  background-color: rgba(255, 0, 0, 0.9);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Add glow effect */
 }
 
-.card3 a {
-  text-decoration: none;
+.card3 .btn {
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add text shadow for better visibility */
 }
 
-.card3 div img {
-  position: absolute;
-  display: none;
-  height: auto;
-}
-
+/* Fix the transformation images positioning */
 #second,
 #third,
 #fourth,
@@ -225,12 +222,16 @@ body {
   display: none;
   height: auto;
   z-index: 10;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center properly */
+  max-width: 90vw; /* Prevent overflow */
 }
 
-#second { top: -1850%; left: -800%; width: 80rem; }
-#third { top: -1250%; left: -680%; width: 55rem; }
-#fourth { top: -1800%; left: -910%; width: 80rem; }
-#fifth { top: -1800%; left: -1010%; width: 80rem; z-index: 20; }
+#second { top: -950%; left: -600%; width: 80rem; }
+#third { top: -950%; left: -600%; width: 55rem; }
+#fourth { top: -950%; left: -600%; width: 80rem; }
+#fifth { top: -950%; left: -600%;top: -950%; left: -600%; width: 80rem; z-index: 20; }
 
 #btn1:hover #second,
 #btn3:hover #third,
