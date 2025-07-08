@@ -179,6 +179,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* span both rows */
+  grid-row: 1 / span 2;
 }
 /* Span all sections across both rows */
 /* Hero Sections fill remaining viewport */
@@ -200,9 +202,12 @@ body {
 }
 .hero-sections .section.right .image-container img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 20px var(--color-accent-2);
+  height: 100%;
+  object-fit: cover;
+  /* remove decorative borders/shadows */
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
   animation: fadeIn 1s ease-in;
 }
 /* Adjust typography and lists */
