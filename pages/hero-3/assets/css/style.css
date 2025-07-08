@@ -117,7 +117,7 @@ body {
   display: block;
   top: 35%;
   left: 10%;
-  z-index: 2rem;
+  z-index: 2; /* Changed from z-index: 2rem; */
 }
 
 #first {
@@ -136,4 +136,87 @@ body {
   font-weight: 700;
   color: #bebb0b;
   text-shadow: 1px 2px 8px #120d0c;
+}
+
+/* Sanji Introduction Styling */
+.sanji-intro {
+  background-color: rgba(18, 13, 12, 0.85);
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #bebb0b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s ease;
+  visibility: hidden;
+}
+
+.sanji-intro h3 {
+  color: #bebb0b;
+  margin-bottom: 15px;
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+}
+
+.sanji-intro p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Show intro when hovering over Introduction button */
+.btn1:hover ~ .hero-sections .left .sanji-intro,
+.btn1:focus ~ .hero-sections .left .sanji-intro {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* Alternative hover implementation if the above doesn't work with your structure */
+.btn1:hover + .left .sanji-intro {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* Sanji Backstory Styling */
+.sanji-backstory {
+  background-color: rgba(18, 13, 12, 0.85);
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  border-right: 4px solid #bebb0b; /* Changed from left to right border for visual distinction */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateX(20px); /* Move from right instead of left */
+  transition: all 0.4s ease;
+  visibility: hidden;
+}
+
+.sanji-backstory h3 {
+  color: #bebb0b;
+  margin-bottom: 15px;
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  text-align: right; /* Right alignment for visual distinction */
+}
+
+.sanji-backstory p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Show backstory when hovering over Backstory button */
+.btn2:hover ~ .hero-sections .right .sanji-backstory,
+.btn2:focus ~ .hero-sections .right .sanji-backstory {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* Alternative hover implementation if the above doesn't work with your structure */
+.btn2:hover + .right .sanji-backstory {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
 }
