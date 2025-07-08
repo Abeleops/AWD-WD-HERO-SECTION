@@ -185,6 +185,6 @@ AWD-WD-HERO-SECTION
 
 ## Resources
 
-| Title | Purpose | Link |
+| Title | Purpose | Link | Grade |
 |-|-|-|
-| SeatWork 2 | 4 HERO SECTION| https://abeleops.github.io/AWD-WD-HERO-SECTION/ |
+| SeatWork 2 | 4 HERO SECTION| https://abeleops.github.io/AWD-WD-HERO-SECTION/ | 100 |
