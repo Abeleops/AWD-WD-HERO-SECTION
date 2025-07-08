@@ -124,55 +124,118 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3.5rem;
+  gap: 2.5rem;
   height: 80vh;
   justify-content: space-between;
+  padding-right: 1rem;
 }
 
 .sword {
   width: 95%;
-  max-width: 420px;
+  max-width: 380px;
   height: auto;
   display: block;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+  transition: all 0.4s ease;
 }
 
+.sword1:hover { filter: drop-shadow(0 0 10px rgba(183, 28, 28, 0.7)); }
+.sword2:hover { filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); }
+.sword3:hover { filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.7)); }
+
 .sword-block {
-  width: 95%;
+  width: 100%;
   max-width: 420px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.sword-block:hover {
+  transform: translateY(-5px);
 }
 
 .sword-desc {
   width: 100%;
-  font-size: 1rem;
-  padding: 0.7rem 1rem;
-  border-radius: 0.5rem;
-  margin-top: 0.5rem;
-  text-align: center;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+  text-align: left;
   min-height: 2.5rem;
-  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: none;
 }
 
-/* Red description */
+.sword-desc.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sword-desc h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sword-desc p {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.sword-desc .sword-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+}
+
+/* Red description - Wado Ichimonji */
 .sword1 + .sword-desc {
-  background: #b71c1c;
+  background: linear-gradient(135deg, #b71c1c, #7f0000);
   color: #fff;
+  border-left: 4px solid #ff8a80;
 }
 
-/* White description */
+/* White description - Sandai Kitetsu */
 .sword2 + .sword-desc {
-  background: #fff;
-  color: #222;
-  border: 1px solid #ccc;
+  background: linear-gradient(135deg, #424242, #212121);
+  color: #fff;
+  border-left: 4px solid #e0e0e0;
 }
 
-/* Violet description */
+/* Violet description - Enma */
 .sword3 + .sword-desc {
-  background: #7c3aed;
+  background: linear-gradient(135deg, #7c3aed, #4c1d95);
   color: #fff;
+  border-left: 4px solid #c4b5fd;
+}
+
+/* Sword label badges */
+.sword-label {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #0bbe56;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transform: rotate(5deg);
 }
 
 /* Remove vertical divider lines for visual separation */
