@@ -68,7 +68,12 @@ document.addEventListener('DOMContentLoaded', function() {
     backstoryContent.style.transform = 'translateX(20px)';
   });
   
-  // Mortal Enemy preview functionality
+  const zeroImg = document.querySelector('.preview-img');
+  
+  // If you need to make adjustments to the image programmatically
+  zeroImg.style.objectPosition = 'center 20%'; // Adjust to show face better
+  
+  // Show preview on hover
   const enemyBtn = document.querySelector('.btn3');
   const enemyPreview = document.querySelector('.mortal-enemy-preview');
   
